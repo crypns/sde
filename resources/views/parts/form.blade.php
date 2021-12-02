@@ -3,12 +3,12 @@
     <input type="text" class="form-control" name="title" maxlength="100"
            placeholder="Заголовок" required value="{{ old('title') ?? $post->title ?? '' }}">
 </div>
-<div class="form-group">
+<div class="form-group" >
     <textarea class="form-control" name="excerpt" placeholder="Анонс поста"
               maxlength="200" required>{{ old('excerpt') ?? $post->excerpt ?? '' }}</textarea>
 </div>
 <div class="form-group">
-    <textarea class="form-control" name="body" placeholder="Текст поста" rows="7"
+    <textarea class="form-control" id="ckeditor_ed" name="body" placeholder="Текст поста" rows="7"
               required>{{ old('body') ?? $post->body ?? '' }}</textarea>
 </div>
 <div class="form-group">

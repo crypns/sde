@@ -239,5 +239,4 @@ class PostController extends Controller {
         // не аутентифицированнные пользователи могут только просматривать
         $this->middleware('auth')->except('index', 'show', 'search');
     }
-
 }

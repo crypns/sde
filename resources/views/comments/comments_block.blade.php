@@ -56,7 +56,7 @@
 
 			<div class="clear"></div>
 			<p class="form-submit">
-				<input name="submit" type="submit" id="submit" value="Отправить" />
+				<input class="btn btn-primary" name="submit" type="submit" id="submit" value="Отправить" />
 			</p>
 		</form>
 	</div>

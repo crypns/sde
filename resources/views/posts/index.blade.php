@@ -1,7 +1,7 @@
 @extends('layouts.site')
 
 @section('content')
-    <h1 class="mt-2 mb-3">Все посты блога</h1>
+    <h1 class="mt-2 mb-3"></h1>
     <div class="row">
         @foreach ($posts as $post)
             <div class="col-6 mb-4">
