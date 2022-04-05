@@ -27,6 +27,9 @@ Route::get('post/edit/{id}', [PostController::class, 'edit' ])->name('post.edit'
 Route::patch('post/update/{id}', [PostController::class, 'update'])->name('post.update')->middleware('auth');
 Route::delete('post/destroy/{id}', [PostController::class, 'destroy'])->name('post.destroy')->middleware('auth');
 Route::get('post/search', [PostController::class, 'search' ])->name('post.search');
+Route::get('accounts/info', [\App\Http\Controllers\AccountController::class, 'account' ])->name('accounts.info')->middleware('auth');
+Route::get('quiz/index', [\App\Http\Controllers\QuestionController::class, 'index' ])->name('quiz.index')->middleware('auth');
+
 
 
 Auth::routes();

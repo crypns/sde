@@ -61,8 +61,13 @@
                 @if (auth()->id() == 1)
                     <a  class="dropdown-item" href="{{ route('post.create') }}">Создать статью</a>
                 @endif
+
+
             @endauth
-            <a class="dropdown-item" href="{{ route('logout') }}"
+                <a  class="dropdown-item" href="{{ route('accounts.info') }}">Профиль</a>
+                <a  class="dropdown-item" href="{{ route('quiz.index') }}">Тест</a>
+
+                <a class="dropdown-item" href="{{ route('logout') }}"
                onclick="event.preventDefault();
                  document.getElementById('logout-form').submit();">
                 {{ __('Logout') }}

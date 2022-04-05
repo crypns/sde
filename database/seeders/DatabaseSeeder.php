@@ -19,5 +19,8 @@ class DatabaseSeeder extends Seeder
 
         $this->call(PostTableSeeder::class);
         $this->command->info('Таблица постов блога загружена данными!');
+
+        $this->call(QuestionTableSeeder::class);
+        $this->command->info('Таблица вопросов загружена данными!');
     }
 }

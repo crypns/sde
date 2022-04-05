@@ -1,4 +1,4 @@
-<?php
+php artisan make:seeder UsersTableSeeder<?php
 
 use Illuminate\Database\Seeder;
 use App\Models\Comment;
